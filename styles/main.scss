@@ -1,5 +1,9 @@
+$black: #000000;
+$white: #ffffff;
+$red: #fa4542;
 $purple: #333040;
 $orange: #FBB040;
+
 
 @font-face {
     font-family: 'TrasandinaBlack';
@@ -13,9 +17,9 @@ $orange: #FBB040;
 
 body {
     margin: 0;
-    font-family:"TrasandinaBlack", sans-serif;
-    color:$orange;
-    background-color: $purple;
+    font-family: 'Karla', sans-serif;
+    color:$white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://s3.amazonaws.com/ga-core/core/core-static/metros/default-background.jpg);
     cursor:none;
 }
 
@@ -29,62 +33,22 @@ body {
     justify-content: center;
 }
 
-.rsSlide {
-    background: $purple !important;
+.rsSlide, .rsOverflow {
+    // background: rgba(0,0,0,0) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://s3.amazonaws.com/ga-core/core/core-static/metros/default-background.jpg) !important;
 }
 
-.work-life {
-    width: 100%;
-
-    &:before  {
-        z-index: -1;
-        content: "";
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: $purple;
-        background-image: url('../img/Cs.png');
-        background-size: 120px 120px;
-    }
-    h2 {
-        font-size: 345px;
-        font-size: 23.5vw;
-        line-height: 0.73;
-        padding: 0 2vw;
-        transform: translate(0,20px); //FIX for crappy font baseline
-        &.small {
-            transform: translate(0,0);
-            padding: 3vw 0 1.5vw;
-            font-size: 10vw;
-            line-height: 1;
-        }
-    }
-    .block {
-        width: 100%;
-        background-color: $purple;
-        text-align: center;
-    }
-}
-
-.logo{
+.message{
     &:before {
-        content: "";
-        background-image: url("../img/worklife.png");
-        width: 10vw;
-        height: 11vh;
+        content: "@worklifecamden";
         display: block;
-        background-size: 100%;
-        position: absolute;
-        top: 2vh;
-        left: 2vw;
-        background-repeat: no-repeat;
+        position: fixed;
+        top:1vw;
+        right: 0;
+        left: 0;
         z-index: 100;
-    }
-    &.sponsor:before {
-        background-image: url("../img/worklife-sponsor.png");
-        height: 14hw;
+        text-align: center;
+        font-size: 2.5vw;
     }
 }
 
@@ -96,19 +60,24 @@ body {
     left: 0;
     display: flex;
     justify-content: space-between;
-    color:$orange;
+    color:$white;
     font-size: 2vw;
-    padding: 1.3vw 1.5vw 1vw;
-    background-color: $purple;
+    padding: 1.5vw;
+    background-color: $black;
+    img {
+        height: 2.3vw;
+    }
 }
 
 
 .climb-feed {
-    font-family:"TrasandinaBold", sans-serif;
-    font-size: 2.0vh;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5vh;
+
+    color: $white;
 
     a {
-        color: black;
+        color: $black;
         text-decoration: none;
     }
 
@@ -117,31 +86,44 @@ body {
     }
 
     .climb__tile, .climb__tile__content, .climb-slideshow__panel {
-        background-color: $orange;
+        background-color: $red;
     }
 
     .climb-slideshow__panel {
         min-width: 450px;
     }
 
-    .climb__tile, .climb-slideshow__panel {
+    .climb-slideshow__panel {
         border-radius: 0 !important;
         border-bottom-right-radius: 2vw !important;
         box-shadow:none !important;
     }
 
-    .climb__tile, .climb-slideshow__slide--has-no-image .climb-slideshow__panel {
-        border-top-left-radius:2vw !important;
-    }
-
     .climb-slideshow__slide--has-no-image .climb-slideshow__panel {
+        border-top-left-radius:2vw !important;
         padding: 45px;
         max-height: 80vh;
         overflow: hidden;
     }
 
-    .climb-slideshow__slide--has-image .climb__message {
-        font-size: 70%;
+    .climb-slideshow__slide--has-image {
+        .climb__message {
+            margin-bottom: 30px;
+            font-size: 100%;
+        }
+        .climb__image {
+            max-height: 77vh;
+            min-height: 20vh;
+        }
+    }
+
+    .climb__message {
+        line-height: 1.05;
+        // overflow: hidden;
+        a {
+            white-space: normal;
+            max-width: 100%;
+        }
     }
 
     .climb__author img {
@@ -149,37 +131,9 @@ body {
     }
 
     .climb__tile__author__username {
-        line-height: 38px !important;
         text-transform: uppercase;
     }
 
-    .climb__tile {
-        height: 60vh !important;
-        .climb__image {
-            border-top-left-radius:0;
-            border-top-right-radius: 0;
-        }
-    }
-
-    .climb__tile__content {
-        z-index: 10;
-    }
-
-
-    .climb__message {
-        margin-bottom: 30px;
-        // overflow: hidden;
-        a {
-            white-space: normal;
-            max-width: 100%;
-        }
-    }
-    .climb-slideshow {
-        .climb__image {
-            max-height: 77vh;
-            min-height: 20vh;
-        }
-    }
 }
 
 .image {
@@ -192,14 +146,32 @@ body {
 }
 
 .center {
-    width: 120vh;
+    width: 80vw;
     text-align: center;
-    img {
-        max-height: 20vw;
-    }
     h3 {
         font-size: 4vw;
         line-height: 0.9;
-        color: $purple;
+        span {
+            color: $red;
+        }
+    }
+    .speakers {
+        display: flex;
+        justify-content: space-between;
+        .speaker {
+            width: 30vw;
+            img {
+                width: 10vw;
+                height: 10vw;
+                border-radius: 5vw;
+            }
+            h4 {
+                font-size: 1.5vw;
+                text-transform: uppercase;
+            }
+            span {
+                font-size: 1vw;
+            }
+        }
     }
 }
