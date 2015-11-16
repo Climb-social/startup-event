@@ -1,4 +1,4 @@
-# unbound-event
+# general-assembly-event
 
 A static site for hosting the General Assembly / WORK.LIFE Climb.social feed.
 
