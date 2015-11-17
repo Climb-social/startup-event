@@ -39,16 +39,26 @@ body {
 }
 
 .message{
-    &:before {
-        content: "#hashtag";
+    &:before, &:after {
         display: block;
         position: fixed;
         top:2vw;
-        right: 0;
-        left: 0;
+        right: 2vw;
+        left: 2vw;
         z-index: 100;
-        text-align: center;
+        text-align: right;
         font-size: 3vw;
+    }
+    &:after {
+        content: "#GAFreelancer";
+        text-align: left;
+    }
+
+    &:before {
+        content: "Wifi: WL Guest\00a0\00a0\00a0\00a0\00a0Password: WORKLIFE@1";
+        text-align: right;
+        font-size: 1.8vw;
+        color: darken($white, 50);
     }
 }
 
