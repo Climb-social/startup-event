@@ -53,7 +53,7 @@ body {
   padding: 1vw 1.5vw 1.5vw;
   background-color: #000000; }
   .footer span {
-    color: #fa4542; }
+    color: #ff0032; }
   .footer img {
     height: 2.3vw;
     margin-bottom: -0.7vw; }
@@ -66,7 +66,7 @@ body {
     color: #000000;
     text-decoration: none; }
   .climb-feed .climb__tile, .climb-feed .climb__tile__content, .climb-feed .climb-slideshow__panel {
-    background-color: #fa4542; }
+    background-color: #ff0032; }
   .climb-feed .climb-slideshow__panel {
     min-width: 450px; }
   .climb-feed .climb-slideshow__panel {
@@ -108,7 +108,7 @@ body {
     font-size: 4vw;
     line-height: 0.9; }
     .center h3 span {
-      color: #fa4542; }
+      color: #ff0032; }
   .center .speakers {
     display: flex;
     justify-content: space-between;
