@@ -40,15 +40,15 @@ body {
 
 .message{
     &:before {
-        content: "@worklifecamden";
+        content: "#hashtag";
         display: block;
         position: fixed;
-        top:1vw;
+        top:2vw;
         right: 0;
         left: 0;
         z-index: 100;
         text-align: center;
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 }
 
@@ -62,10 +62,14 @@ body {
     justify-content: space-between;
     color:$white;
     font-size: 2vw;
-    padding: 1.5vw;
+    padding: 1vw 1.5vw 1.5vw;
     background-color: $black;
+    span {
+        color: $red;
+    }
     img {
         height: 2.3vw;
+        margin-bottom: -0.7vw;
     }
 }
 
@@ -82,7 +86,7 @@ body {
     }
 
     .climb-social-badge {
-        display: none;
+        // display: none;
     }
 
     .climb__tile, .climb__tile__content, .climb-slideshow__panel {
@@ -109,20 +113,20 @@ body {
     .climb-slideshow__slide--has-image {
         .climb__message {
             margin-bottom: 30px;
-            font-size: 100%;
+            font-size: 130%;
         }
         .climb__image {
             max-height: 77vh;
-            min-height: 20vh;
+            // min-height: 20vh;
         }
     }
 
     .climb__message {
         line-height: 1.05;
-        // overflow: hidden;
         a {
             white-space: normal;
             max-width: 100%;
+            overflow: initial;
         }
     }
 
@@ -158,6 +162,7 @@ body {
     .speakers {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 10vw;
         .speaker {
             width: 30vw;
             img {

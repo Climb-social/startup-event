@@ -23,17 +23,7 @@
     <body>
         <div class="sliderContainer fullWidth clearfix">
             <div id="full-width-slider" class="royalSlider heroSlider rsMinW">
-                <div class="rsContent message" data-rsDelay="20000">
-                    <div class="climb-feed">
-                        <div class="climb-slideshow" data-collection-id="5645d4ce45284e4bb8e1c7de" data-delay="5"></div>
-                    </div>
-                    <div class="footer">
-                        <img class="sponsor-logo" src="https://ga-navi-production-herokuapp-com.global.ssl.fastly.net/assets/ga-lockup-71fbaaab518d174889a54e55cef043ba56a2a04e617235b74b1a9241f2791665.png">
-                        <span>@worklifecamden</span>
-                        <img class="sponsor-logo" src="img/worklife_long-logo.png">
-                    </div>
-                </div>
-                <div class="rsContent logo message" data-rsDelay="5000">
+                <div class="rsContent logo">
                     <div class="center">
                         <h3>DOING MORE AT WORK + LIFE:</br><span>THE FREELANCER REVOLUTION</span></h3>
                         <div class="speakers">
@@ -60,9 +50,25 @@
                         </div>
                     </div>
                     <div class="footer">
-                        <img class="sponsor-logo" src="https://ga-navi-production-herokuapp-com.global.ssl.fastly.net/assets/ga-lockup-71fbaaab518d174889a54e55cef043ba56a2a04e617235b74b1a9241f2791665.png">
-                        <span>@worklifecamden</span>
-                        <img class="sponsor-logo" src="img/worklife_long-logo.png">
+                        <div>
+                            <img class="sponsor-logo" src="https://ga-navi-production-herokuapp-com.global.ssl.fastly.net/assets/ga-lockup-71fbaaab518d174889a54e55cef043ba56a2a04e617235b74b1a9241f2791665.png">
+                            <span>+</span>
+                            <img class="sponsor-logo" src="img/worklife_long-logo.png">
+                        </div>
+                        <img class="sponsor-logo" src="img/climb_powered-by.png">
+                    </div>
+                </div>
+                <div class="rsContent message">
+                    <div class="climb-feed">
+                        <div class="climb-slideshow" data-collection-id="5645d4ce45284e4bb8e1c7de" data-delay="7"></div>
+                    </div>
+                    <div class="footer">
+                        <div>
+                            <img class="sponsor-logo" src="https://ga-navi-production-herokuapp-com.global.ssl.fastly.net/assets/ga-lockup-71fbaaab518d174889a54e55cef043ba56a2a04e617235b74b1a9241f2791665.png">
+                            <span>+</span>
+                            <img class="sponsor-logo" src="img/worklife_long-logo.png">
+                        </div>
+                        <img class="sponsor-logo" src="img/climb_powered-by.png">
                     </div>
                 </div>
             </div>
@@ -70,13 +76,6 @@
         <script id="addJS">
             jQuery(document).ready(function($) {
                 $('#full-width-slider').royalSlider({
-                    loop: true,
-                    autoPlay: {
-                        enabled: false,
-                        stopAtAction: false,
-                        pauseOnHover: false,
-                        delay: 3000
-                    },
                     transitionType: 'fade',
                     keyboardNavEnabled: true,
                     fullscreen: {
