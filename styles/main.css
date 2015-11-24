@@ -19,7 +19,9 @@ body {
   justify-content: center; }
 
 .rsSlide, .rsOverflow {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/startup_grind_background.png") !important; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/startup_grind_background.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important; }
 
 .message:before, .message:after {
   display: block;
