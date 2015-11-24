@@ -54,7 +54,7 @@ body {
     }
 
     &:before {
-        // content: "Wifi: WL Guest\00a0\00a0\00a0\00a0\00a0Password: WORKLIFE@1";
+        content: "Wifi: WL Guest\00a0\00a0\00a0\00a0\00a0Password: WORKLIFE@1";
         text-align: right;
         font-size: 1.8vw;
         color: darken($white, 50);
@@ -184,6 +184,8 @@ body {
         display: flex;
         justify-content: space-between;
         margin-bottom: 10vw;
+        margin-top: 20vw;
+
         .speaker {
             width: 100%;
             img {
